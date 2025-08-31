@@ -15,6 +15,7 @@ const Header: React.FC = () => {
   const [atTop, setAtTop] = useState(true)
   const [activeId, setActiveId] = useState<string>('')
   const menuRef = useRef<HTMLDivElement>(null)
+  const toggleRef = useRef<HTMLButtonElement>(null)
   const sectionIds = useMemo(
     () => ['about', 'amenities', 'gallery', 'pricing', 'location', 'enquiry'],
     []
@@ -31,12 +32,25 @@ const Header: React.FC = () => {
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
       if (!open) return
-      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-        setOpen(false)
-      }
+      const target = e.target as Node
+      // Ignore clicks inside the menu or on the toggle button
+      if (menuRef.current && menuRef.current.contains(target)) return
+      if (toggleRef.current && toggleRef.current.contains(target)) return
+      setOpen(false)
     }
     document.addEventListener('click', onClick)
     return () => document.removeEventListener('click', onClick)
+  }, [open])
+
+  // Prevent background scroll when mobile menu is open
+  useEffect(() => {
+    if (open) {
+      const prev = document.body.style.overflow
+      document.body.style.overflow = 'hidden'
+      return () => {
+        document.body.style.overflow = prev
+      }
+    }
   }, [open])
 
   // Transparent header on top of hero; solid after scrolling
@@ -134,6 +148,7 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <button
+            ref={toggleRef}
             className={`md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border text-sm font-medium transition-colors ${
               atTop
                 ? 'border-white/40 text-white bg-slate-900/20 hover:bg-slate-900/30 ring-1 ring-inset ring-white/30'
