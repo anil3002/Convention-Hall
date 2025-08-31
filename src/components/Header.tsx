@@ -119,7 +119,7 @@ const Header: React.FC = () => {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center min-w-0">
             <span
-              className={`truncate max-w-[65vw] font-brand brand-title font-normal text-2xl sm:text-3xl md:text-4xl ${
+              className={`max-w-[78vw] sm:max-w-none font-brand brand-title font-normal whitespace-nowrap text-[clamp(14px,5.2vw,26px)] sm:text-3xl md:text-4xl ${
                 atTop ? 'text-white' : 'text-slate-900'
               }`}
               aria-label="KS Convention Hall"

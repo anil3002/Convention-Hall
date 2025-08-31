@@ -39,10 +39,17 @@ body {
     font-family: 'Cinzel Decorative', 'Cormorant Garamond', 'Playfair Display', 'Cinzel', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   }
   .brand-title {
-    letter-spacing: .08em;
+    /* Tighter default tracking on small screens; widen on larger */
+    letter-spacing: .05em;
     font-variant-ligatures: common-ligatures discretionary-ligatures;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+  }
+  @media (min-width: 640px) { /* sm */
+    .brand-title { letter-spacing: .07em; }
+  }
+  @media (min-width: 768px) { /* md */
+    .brand-title { letter-spacing: .08em; }
   }
   /* Splash stage/curtain effects */
   .splash-fade { animation: splash-in 700ms ease-out both; }

@@ -96,7 +96,7 @@ const App: React.FC = () => {
       </script>
 
       <Splash show={showSplash} />
-      <Header />
+      {!showSplash && <Header />}
       <main id="content" className="isolate">
         <Hero />
         <About />
