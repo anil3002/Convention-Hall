@@ -1,0 +1,134 @@
+{
+  "entrance": {
+    "sizes": {
+      "800": {
+        "width": 800,
+        "height": 533,
+        "src": "assets/images/optimized/entrance-800.webp",
+        "bytes": 34374
+      },
+      "1200": {
+        "width": 1200,
+        "height": 800,
+        "src": "assets/images/optimized/entrance-1200.webp",
+        "bytes": 68014
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1067,
+        "src": "assets/images/optimized/entrance-1600.webp",
+        "bytes": 106716
+      }
+    }
+  },
+  "entry": {
+    "sizes": {
+      "800": {
+        "width": 800,
+        "height": 533,
+        "src": "assets/images/optimized/entry-800.webp",
+        "bytes": 42424
+      },
+      "1200": {
+        "width": 1200,
+        "height": 800,
+        "src": "assets/images/optimized/entry-1200.webp",
+        "bytes": 79952
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1067,
+        "src": "assets/images/optimized/entry-1600.webp",
+        "bytes": 120956
+      }
+    }
+  },
+  "function_hall_logo": {
+    "sizes": {
+      "800": {
+        "width": 800,
+        "height": 776,
+        "src": "assets/images/optimized/function_hall_logo-800.webp",
+        "bytes": 38322
+      },
+      "1200": {
+        "width": 1200,
+        "height": 1165,
+        "src": "assets/images/optimized/function_hall_logo-1200.webp",
+        "bytes": 56806
+      },
+      "1320": {
+        "width": 1320,
+        "height": 1281,
+        "src": "assets/images/optimized/function_hall_logo-1320.webp",
+        "bytes": 63724
+      }
+    }
+  },
+  "hallway": {
+    "sizes": {
+      "800": {
+        "width": 800,
+        "height": 533,
+        "src": "assets/images/optimized/hallway-800.webp",
+        "bytes": 46512
+      },
+      "1200": {
+        "width": 1200,
+        "height": 800,
+        "src": "assets/images/optimized/hallway-1200.webp",
+        "bytes": 90668
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1067,
+        "src": "assets/images/optimized/hallway-1600.webp",
+        "bytes": 136884
+      }
+    }
+  },
+  "rooms": {
+    "sizes": {
+      "800": {
+        "width": 800,
+        "height": 533,
+        "src": "assets/images/optimized/rooms-800.webp",
+        "bytes": 24588
+      },
+      "1200": {
+        "width": 1200,
+        "height": 800,
+        "src": "assets/images/optimized/rooms-1200.webp",
+        "bytes": 43094
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1067,
+        "src": "assets/images/optimized/rooms-1600.webp",
+        "bytes": 61028
+      }
+    }
+  },
+  "stage": {
+    "sizes": {
+      "800": {
+        "width": 800,
+        "height": 533,
+        "src": "assets/images/optimized/stage-800.webp",
+        "bytes": 74336
+      },
+      "1200": {
+        "width": 1200,
+        "height": 800,
+        "src": "assets/images/optimized/stage-1200.webp",
+        "bytes": 149588
+      },
+      "1600": {
+        "width": 1600,
+        "height": 1067,
+        "src": "assets/images/optimized/stage-1600.webp",
+        "bytes": 234656
+      }
+    }
+  }
+}
