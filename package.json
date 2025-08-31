@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://anil3002.github.io/convention-hall",
+  "homepage": "https://anil3002.github.io/Convention-Hall",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
