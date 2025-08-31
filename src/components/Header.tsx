@@ -134,10 +134,10 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <button
-            className={`md:hidden inline-flex items-center justify-center p-2 rounded border ${
+            className={`inline-flex h-10 w-10 items-center justify-center rounded-md border text-sm font-medium transition-colors ${
               atTop
-                ? 'border-white/40 text-white hover:bg-white/10'
-                : 'border-slate-300 text-slate-700 hover:bg-slate-100'
+                ? 'border-white/40 text-white bg-slate-900/20 hover:bg-slate-900/30 ring-1 ring-inset ring-white/30'
+                : 'border-slate-300 text-slate-700 bg-white hover:bg-slate-100 ring-1 ring-inset ring-slate-200'
             } focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400`}
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
@@ -147,15 +147,16 @@ const Header: React.FC = () => {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
               <path fillRule="evenodd" d="M3.75 5.25a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75Zm0 6a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75Zm.75 5.25a.75.75 0 0 0 0 1.5h15a.75.75 0 0 0 0-1.5h-15Z" clipRule="evenodd" />
             </svg>
+            <span className="sr-only">Menu</span>
           </button>
         </div>
       </div>
       <div
         id="mobile-menu"
         ref={menuRef}
-        className={`md:hidden ${open ? 'block' : 'hidden'} border-t ${
+        className={`${open ? 'block' : 'hidden'} border-t ${
           atTop ? 'border-white/10 bg-slate-900/90 text-white' : 'border-slate-200 bg-white'
-        }`}
+        } max-h-[80vh] overflow-y-auto pb-safe`}
       >
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3" aria-label="Mobile">
           <ul className="flex flex-col gap-2">
