@@ -4,6 +4,7 @@ import path from 'node:path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/convention-hall/',
   plugins: [react()],
   resolve: {
     alias: {
