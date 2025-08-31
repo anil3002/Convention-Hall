@@ -134,7 +134,7 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <button
-            className={`inline-flex h-10 w-10 items-center justify-center rounded-md border text-sm font-medium transition-colors ${
+            className={`md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border text-sm font-medium transition-colors ${
               atTop
                 ? 'border-white/40 text-white bg-slate-900/20 hover:bg-slate-900/30 ring-1 ring-inset ring-white/30'
                 : 'border-slate-300 text-slate-700 bg-white hover:bg-slate-100 ring-1 ring-inset ring-slate-200'
@@ -154,7 +154,7 @@ const Header: React.FC = () => {
       <div
         id="mobile-menu"
         ref={menuRef}
-        className={`${open ? 'block' : 'hidden'} border-t ${
+        className={`md:hidden ${open ? 'block' : 'hidden'} border-t ${
           atTop ? 'border-white/10 bg-slate-900/90 text-white' : 'border-slate-200 bg-white'
         } max-h-[80vh] overflow-y-auto pb-safe`}
       >
