@@ -89,7 +89,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-colors ${
+      className={`fixed top-0 inset-x-0 z-[70] transition-colors pt-safe ${
         atTop
           ? 'bg-transparent'
           : 'bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-200'

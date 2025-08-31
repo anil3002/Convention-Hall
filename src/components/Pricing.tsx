@@ -22,9 +22,14 @@ const Pricing: React.FC = () => (
             <h3 className="text-lg font-semibold text-slate-900">{t.name}</h3>
             <p className="mt-2 text-slate-700">{t.details}</p>
             <div className="mt-4">
-              <span className="inline-flex items-center rounded bg-slate-900 px-3 py-1.5 text-sm font-medium text-white">
+              <a
+                href={`https://wa.me/919700029590?text=${encodeURIComponent(`Hi, I'm interested in the ${t.name} at KS Convention Hall. Please share the quote and details.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded bg-slate-900 px-3 py-1.5 text-sm font-medium text-white hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
+              >
                 Contact for quote
-              </span>
+              </a>
             </div>
           </div>
         ))}
