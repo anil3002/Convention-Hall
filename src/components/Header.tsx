@@ -103,7 +103,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-[70] transition-colors pt-safe ${
+      className={`fixed top-0 inset-x-0 z-[100] transition-colors pt-safe ${
         atTop
           ? 'bg-transparent'
           : 'bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-200'
@@ -117,9 +117,9 @@ const Header: React.FC = () => {
       </a>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center">
+          <div className="flex items-center min-w-0">
             <span
-              className={`whitespace-nowrap font-brand brand-title font-normal text-3xl md:text-4xl ${
+              className={`truncate max-w-[65vw] font-brand brand-title font-normal text-2xl sm:text-3xl md:text-4xl ${
                 atTop ? 'text-white' : 'text-slate-900'
               }`}
               aria-label="KS Convention Hall"

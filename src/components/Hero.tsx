@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
         loading="eager"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 to-slate-800/85" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-900/90 to-slate-800/85" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-16 sm:pt-32 sm:pb-24 min-h-[100vh] flex items-center">
         <div className="max-w-2xl">
           <h1 id="hero-heading" className="text-3xl sm:text-4xl font-bold tracking-tight">
