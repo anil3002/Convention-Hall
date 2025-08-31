@@ -9,6 +9,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview --open",
     "images": "node scripts/process-images.mjs",
+    "postbuild": "node scripts/add-404.cjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
